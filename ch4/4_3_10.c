@@ -8,20 +8,20 @@
 
 /*stack for calc*/
 #define MAXSIZE 100
-struct Stack{
+typedef struct stack{
     double data[MAXSIZE];
     size_t top; 
-};
+}Stack;
 int push(Stack *stk,double d_t);
 double pop(Stack *stk);
 
 /*queue for calc*/
 #define MAXSIZE 100
-struct Queue{
+typedef struct queue{
     char data[MAXSIZE];
     size_t beg;
     size_t end; 
-};
+}Queue;
 int push(Queue*que,char d_t);
 char pop(Queue*que);
 
